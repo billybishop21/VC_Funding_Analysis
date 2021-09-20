@@ -4,11 +4,38 @@
 # Technologies
 
 ```python
-import numpy as np
+import pandas as pd
+from pathlib import Path
+import tensorflow as tf
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler,OneHotEncoder
 ```
 ---
 
 # Analysis Information
+
+Original Model:
+Hidden layer 1: 16, relu
+Hidden layer 2: 12, relu
+Output layer: linear
+Loss: 0.6414
+Accuracy: 0.7284
+
+Alternative Model 1:
+Hidden layer 1: 28, relu
+Hidden layer 2: 8, relu
+Output layer: linear
+Loss: 0.6249
+Accuracy: 0.7280
+
+Alternative Model 2:
+Hidden layer 1: 40, relu
+Hidden layer 2: 14, relu
+Output layer: linear
+Loss: 0.6025
+Accuracy: 0.7268
 
 ---
 
